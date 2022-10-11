@@ -1,0 +1,22 @@
+Name: Sammy Tesfai
+Student ID: 1813600
+
+Files:
+    myproxy.c
+        Handles the bulk of the proxy servers functionality such as initialization of input/output files, establshing servers
+        sockets and making a thread for each client.
+
+    Syscall.c/Sycall.h
+        This is a wrapper API top error check system calls used by the client in order to reduce the code within the
+        client for readability
+
+    misc.c/misc.h
+        This is a API that holds parsing functions for various strings that need to have data extracted from them specific
+        to what the clients needs for its functionality
+
+    proxy_manager.c/proxy_manager.h
+        This file handles all the major functionality of the proxy such as re-loading forbidden website information, Establishing 
+        TCP connection, Sending HTTP errors messages, and freeing memory for every client.
+
+    Makefile
+        This is the makefile to compile all the of modules written to ultimately create an executable binary.
